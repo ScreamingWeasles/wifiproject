@@ -1,0 +1,18 @@
+Screaming Weasels Wi-Fi Teaser v0.8.7 — DEVELOPMENT SOURCE
+
+Based on the user-tested v0.8.6 source ZIP.
+
+Changes:
+- Export latest completed Ping and Speed diagnostics to CSV and PDF from the Speed tab.
+- Ping report includes target, ICMP payload size, requested/actual duration, sent/received packets, loss, min/average/max RTT, and average successive RTT variation (jitter proxy).
+- Speed report includes HTTPS download/upload Mbps and DNS HTTPS response timing. It explicitly marks ICMP average latency and jitter as not measured in the speed test.
+- Mustard-yellow primary action buttons across Wi-Fi, Speed, AP naming and Device Scan; the Survey retains its green idle/mustard active behavior.
+- Existing on-demand Device Scan deep investigation preserved, with hostname, selected TCP ports, response details and uncertainty notices.
+
+Limitations:
+- Device Scan does not infer MAC/vendor, OS, or UDP service state without supporting observations.
+- This build does not claim live speed-test jitter measurements.
+- Reports export the latest in-memory Ping and Speed results; they are not yet a multi-session archive.
+- The Android app has not been compiled in this environment (no Android SDK/Gradle wrapper executable available). Build and test in Android Studio.
+
+Build: Open OfficeWifiInspector in Android Studio and Build > Rebuild Project.

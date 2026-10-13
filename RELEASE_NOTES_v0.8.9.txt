@@ -1,0 +1,11 @@
+Screaming Weasels Wi-Fi Teaser v0.8.9 — SALT preview
+
+Added a standalone SALT sustained HTTPS download test to the Speed Ping tab.
+Durations: 30 seconds, 60 seconds (default), 5 minutes, until stopped.
+Reports current/mean/min/max one-second throughput, transferred MB, errors, stalls, BSSID/RSSI samples, AP roam count, heuristic stability grade, and CSV/PDF diagnostics export.
+No other PC or locally configured server is required. Transfers use Cloudflare's public HTTPS download endpoint and consume internet data.
+IMPORTANT: SALT is not LAN-only; its results include the Wi-Fi, LAN, ISP and public server path. It cannot distinguish internet congestion from local Wi-Fi problems by itself.
+
+NOT YET IMPLEMENTED: upload/bidirectional SALT workloads, configurable file-size caps and parallel streams, robust stall/recovery instrumentation, explicit transfer consent, roaming graph annotations, live PDF chart. Those features require additional work and validation.
+
+The source was statically edited but not compiled or run in an Android environment. Keep the tested v0.8.8 backup and test this preview carefully. Note the Gradle wrapper JAR is absent from the uploaded source.

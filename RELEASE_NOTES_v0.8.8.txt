@@ -1,0 +1,17 @@
+Screaming Weasels Wi-Fi Teaser v0.8.8 — development source
+Based on v0.8.7 reporting source. Keep v0.8.7 backed up.
+
+- Speed tab renamed Speed Ping; speed test controls/results above Advanced Ping.
+- Completed ping jitter: GOOD (<=10ms, green), FAIR (>10 to 30ms, yellow), POOR (>30ms, red). Grades included in CSV/PDF, with color in PDF.
+- Wi-Fi scan renamed Wi-Fi AP Discovery; button Scan for APs; Discovered Access Points heading.
+- Friendly AP names in bold yellow/gold across connected Wi-Fi, discovery and AP Health lists.
+- Tap an AP in discovery, nearby Wi-Fi or AP Health to view available detailed scan, connection and recorded signal information and rename it.
+- AP Health Monitor button pulses while active, and What is Monitor? explains foreground monitoring.
+- Device Scan: IP Only and Thorough only. Removed UDP discovery UI. IP drilldown attempts a best-effort MAC read from the Android neighbor table (often restricted).
+- Device investigation dialog scrolls.
+
+Limitations:
+- Android may restrict MAC and advanced AP details; unavailable fields are labeled.
+- Jitter grade currently displays with the completed Ping result, not a per-packet live moving average.
+- UDP legacy code/data fields may remain internally for backward compatibility; no UDP discovery controls appear in Device Scan.
+- This source package was not compiled in this environment (Android SDK/Gradle wrapper JAR unavailable). Build and test in Android Studio before using in the field.

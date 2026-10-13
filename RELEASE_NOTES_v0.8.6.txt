@@ -1,0 +1,25 @@
+Android Utilities / Screaming Weasels Wi-Fi Teaser v0.8.6
+SOURCE PREVIEW — NOT COMPILED OR DEVICE TESTED
+
+Changes implemented in this source package:
+- AP Health: tap Name / rename AP; friendly names saved by BSSID to Android SharedPreferences and reused in Survey.
+- Survey: manual AP-name entry also saves to the same persistent name registry.
+- AP Health: tap an alert to read its full text in a dialog.
+- Speed: removed the Teams-style UDP video simulator from the UI.
+- Speed: added ICMP Ping Test with payload slider (32-1472 bytes), duration choices (5s, 30s, 1m, 5m, until stopped), live progress and stop button.
+- Ping summary: sent, received, loss, min/avg/max RTT, successive RTT variation (jitter approximation), elapsed time.
+- Device Scan: tap any discovered IP, including IP-only scan results, for an on-demand targeted TCP service investigation dialog.
+- Active scan/ping progress uses mustard yellow; existing mustard Survey indicator preserved.
+- Version name updated to 0.8.6.
+
+Known limitations / next work:
+- Android SDK/Gradle compilation and phone/tablet runtime validation still required.
+- Android system /system/bin/ping availability and supported flags vary; some devices block ICMP.
+- Ping results are on-screen only; report export integration for Ping/Speed still needs implementation.
+- Speed test itself remains HTTPS throughput with DNS timing; no independent true jitter measure is claimed for throughput test.
+- AP Health alert descriptions are contextual summaries, not a full root-cause diagnosis.
+- Device deep dive is limited to 13 selected TCP ports and reverse DNS; MAC/vendor, UDP response tests, and OS fingerprints not implemented.
+- Full app-wide active-button mustard treatment needs review on all tabs.
+- In-flight tests do not survive Android process termination; tab switching behavior remains per existing implementation.
+
+Build: Open the project in Android Studio, Sync, Build > Rebuild Project. Keep v0.8.5 backup intact.
