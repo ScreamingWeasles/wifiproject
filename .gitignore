@@ -1,0 +1,22 @@
+# Gradle and Android build files
+.gradle/
+.kotlin/
+**/build/
+local.properties
+
+# Android Studio settings
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/shelf/
+*.iml
+
+# Generated applications
+*.apk
+*.aab
+
+# Signing keys and credentials
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
